@@ -47,10 +47,27 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lgZ-S8-J2N">
-                                <rect key="frame" x="362" y="48" width="32" height="30"/>
+                                <rect key="frame" x="362" y="48.333333333333329" width="32" height="29.999999999999986"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
                                     <action selector="NextPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1F8-iQ-iFB"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W1A-NZ-AyX">
+                                <rect key="frame" x="16" y="95" width="378" height="222"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="da9-SJ-xEI">
+                                <rect key="frame" x="20" y="686" width="374" height="30"/>
+                                <color key="backgroundColor" red="0.61315595256952715" green="0.7089602728907739" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.57296800922014968" green="0.63534799859580104" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Color">
+                                    <color key="titleColor" red="0.95379499538802825" green="0.93166163934034285" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="colorButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pAb-eH-0xd"/>
+                                    <action selector="colorButton_touchDown:" destination="BYZ-38-t0r" eventType="touchDown" id="e1T-Nx-n3g"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -60,6 +77,8 @@
                             <constraint firstAttribute="trailing" secondItem="tnW-WA-h8V" secondAttribute="trailing" id="2jG-kr-W7K"/>
                             <constraint firstItem="tnW-WA-h8V" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="4Uf-jB-Rt2"/>
                             <constraint firstItem="K81-zd-ixe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="4Uo-mc-f3I"/>
+                            <constraint firstItem="W1A-NZ-AyX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-4" id="8kF-zY-fD5"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="da9-SJ-xEI" secondAttribute="bottom" constant="20" id="A4G-Rc-4ib"/>
                             <constraint firstItem="tnW-WA-h8V" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="A64-lc-lRu"/>
                             <constraint firstAttribute="trailing" secondItem="tnW-WA-h8V" secondAttribute="trailing" constant="8" id="F7E-xg-mUF"/>
                             <constraint firstItem="tnW-WA-h8V" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="GeO-1j-utX"/>
@@ -69,9 +88,13 @@
                             <constraint firstItem="tnW-WA-h8V" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="KWh-5w-88b"/>
                             <constraint firstAttribute="trailing" secondItem="tnW-WA-h8V" secondAttribute="trailing" constant="8" id="KzK-lN-Pqr"/>
                             <constraint firstAttribute="trailing" secondItem="tnW-WA-h8V" secondAttribute="trailing" constant="8" id="LCc-xw-RLp"/>
+                            <constraint firstItem="W1A-NZ-AyX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-4" id="Mhb-9S-bSZ"/>
                             <constraint firstItem="K81-zd-ixe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Nap-ZH-SgO"/>
                             <constraint firstItem="K81-zd-ixe" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="OAr-hP-WfG"/>
                             <constraint firstItem="vSl-eB-roc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Qd5-wR-Roo"/>
+                            <constraint firstItem="da9-SJ-xEI" firstAttribute="top" secondItem="W1A-NZ-AyX" secondAttribute="bottom" constant="369" id="S6A-xR-loo"/>
+                            <constraint firstItem="W1A-NZ-AyX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-4" id="SuR-GW-UTi"/>
+                            <constraint firstItem="W1A-NZ-AyX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-4" id="VLo-63-b2K"/>
                             <constraint firstItem="tnW-WA-h8V" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="Vp4-ZZ-PTY"/>
                             <constraint firstItem="tnW-WA-h8V" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="aGX-23-DGQ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="K81-zd-ixe" secondAttribute="trailing" id="bYl-kf-gKG"/>
@@ -80,8 +103,13 @@
                             <constraint firstItem="tnW-WA-h8V" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="jI3-QH-BQD"/>
                             <constraint firstItem="tnW-WA-h8V" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="khy-vZ-HJk"/>
                             <constraint firstItem="tnW-WA-h8V" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="mbV-BB-zYu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="da9-SJ-xEI" secondAttribute="trailing" id="nGP-wg-ty7"/>
+                            <constraint firstItem="W1A-NZ-AyX" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="75" id="pD7-yO-AZ0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="W1A-NZ-AyX" secondAttribute="trailing" id="qht-oT-nHB"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="da9-SJ-xEI" secondAttribute="leading" id="rL6-tN-nig"/>
                             <constraint firstItem="tnW-WA-h8V" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="tGK-F2-FJQ"/>
                             <constraint firstAttribute="trailing" secondItem="tnW-WA-h8V" secondAttribute="trailing" constant="8" id="uD9-Qy-quK"/>
+                            <constraint firstItem="W1A-NZ-AyX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-4" id="ueV-fU-Ni4"/>
                             <constraint firstItem="tnW-WA-h8V" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uxE-5t-fXV"/>
                             <constraint firstItem="tnW-WA-h8V" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vrj-Im-JVh"/>
                             <constraint firstItem="lgZ-S8-J2N" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="wHu-bV-JBQ"/>
@@ -91,12 +119,13 @@
                     </view>
                     <connections>
                         <outlet property="answerLabel" destination="K81-zd-ixe" id="RdT-Rq-QJj"/>
+                        <outlet property="colorChangeView" destination="W1A-NZ-AyX" id="e2t-iR-f00"/>
                         <outlet property="questionLabel" destination="tnW-WA-h8V" id="3nN-Vy-LHl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+            <point key="canvasLocation" x="136.23188405797103" y="138.58695652173915"/>
         </scene>
     </scenes>
 </document>
